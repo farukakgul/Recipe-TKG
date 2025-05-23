@@ -74,6 +74,7 @@ bash train.sh
 Run the following script to start evaluation:
 ```bash
 bash eval.sh
+```
 
 ## 📄 Acknowledgments
 
