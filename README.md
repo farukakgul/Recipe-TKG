@@ -78,4 +78,4 @@ bash eval.sh
 
 ## 📄 Acknowledgments
 
-This repository includes components adapted from [GenTKG](https://github.com/mayhugotong/GenTKG). We thank the authors for their implementation and cite their work accordingly in our paper. Please refer to their [repository](https://github.com/mayhugotong/GenTKG) for the original code and license.
+This repository includes components adapted from [GenTKG](https://github.com/mayhugotong/GenTKG). Please refer to their [repository](https://github.com/mayhugotong/GenTKG) for the original code and license.
