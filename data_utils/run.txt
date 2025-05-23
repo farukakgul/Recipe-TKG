@@ -1,0 +1,41 @@
+python ./data_utils/create_json_train.py --dir_of_trainset './data/processed/train/icews14/history_facts/history_facts_icews18.txt' --dir_of_answers './data/processed_new/icews18/train/test_answers/test_answers_icews18.txt' --dir_of_entities2id './data/icews18/entity2id.json' --path_save './data/processed_new/icews18/train'
+
+python ./data_utils/retrieve.py --name_of_rules_file 100325160827_r[1,2,3]_n200_exp_s12_rules.json --dataset icews14
+
+python ./data_utils/sample_from_json.py 
+
+python ./data_utils/retrieve.py --name_of_rules_file 250325210933_r[1]_n200_exp_s12_rules.json --dataset icews14
+
+python ./data_utils/retrieve.py --name_of_rules_file 260325130754_r[1]_n200_exp_s12_rules.json --dataset icews14 -t compv2
+
+python ./data_utils/retrieve.py --name_of_rules_file 260325130754_r[1]_n200_exp_s12_rules.json --dataset icews14 -t comp
+
+python ./data_utils/retrieve.py --name_of_rules_file 260325130754_r[1]_n200_exp_s12_rules.json --dataset icews14 -t weighted
+
+python ./data_utils/retrieve.py --name_of_rules_file 260325130754_r[1]_n200_exp_s12_rules.json --dataset icews14 -t weightedv2
+
+python ./data_utils/statistics.py
+
+python ./data_utils/retrieve.py --name_of_rules_file 260325130754_r[1]_n200_exp_s12_rules.json --dataset icews14 -t weightedv3
+
+python ./data_utils/retrieve.py --name_of_rules_file 260325130754_r[1]_n200_exp_s12_rules.json --dataset icews14 -t weightedv1_1
+
+python3 learn.py -d YAGO -l 1 -n 200 -p 15 -s 12
+
+python3 learn.py -d icews18 -l 1 -n 200 -p 15 -s 12
+
+python3 learn.py -d icews0515 -l 1 -n 200 -p 15 -s 12
+
+python3 learn.py -d GDELT -l 1 -n 200 -p 15 -s 12
+
+python ./data_utils/retrieve.py --name_of_rules_file 100425125246_r[1]_n200_exp_s12_rules.json --dataset icews18 -t weighted
+
+python ./data_utils/retrieve.py --name_of_rules_file 100425123211_r[1]_n200_exp_s12_rules.json --dataset YAGO -t weighted
+
+python ./data_utils/retrieve.py --name_of_rules_file 100425134300_r[1]_n200_exp_s12_rules.json --dataset icews0515 -t weighted
+
+python ./data_utils/retrieve.py --name_of_rules_file 150425175019_r[1]_n200_exp_s12_rules.json --dataset GDELT -t weighted
+
+python ./data_utils/retrieve.py --dataset icews14 -t isi
+
+python ./data_utils/retrieve.py --name_of_rules_file 260325130754_r[1]_n200_exp_s12_rules.json --dataset icews14 -t rbmh
