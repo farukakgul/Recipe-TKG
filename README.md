@@ -43,9 +43,16 @@ model/
 ---
 
 ### 📁 `data/`
-Organized into training and evaluation subsets:
+Due to GitHub file size limitations, the raw dataset is hosted on Google Drive.
+
+[Download Data from Google Drive](https://drive.google.com/drive/folders/1kdo_pn6PDig7SJ61feugRDwckcTZ8KHX?usp=sharing)
+
+After downloading, place the folder under `data/` directory.
+
+Use the utils in `data_utils/` to preprocess the raw data `data/original` into the required format `data/processed` for training and evaluation.
+
 ```bash
-data/
+data/processed/
 ├── train/
 │   ├── icews14/
 │   ├── icews18/

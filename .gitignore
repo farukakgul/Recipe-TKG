@@ -1,12 +1,9 @@
 __pycache__/
-data/
 data_strictly_before/
+data/
 model.zip
-model/
 wandb/
-output/
 output_2_dontuse/
 output_before/
 model_pre/
-*.sh
 *.pdf
